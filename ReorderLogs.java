@@ -1,6 +1,7 @@
 //https://leetcode.com/problems/reorder-data-in-log-files
 //TC : nlogn
-//SC : O(1)
+//SC : O(1) - in case of quick sort | O(n) in case of merge sort - under the hood.
+// O(1) space over the hood
 class Solution {
     public String[] reorderLogFiles(String[] logs) {
         Arrays.sort(logs,(a,b)-> {
